@@ -1,0 +1,159 @@
+/* التصميم العام */
+body {
+    font-family: 'Arial', sans-serif;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #2a9d8f;
+}
+
+/* البانر الترحيبي */
+header {
+    text-align: center; /* توسيط النص في الهيدر */
+    margin: 0 auto; /* توسيط العنصر في الصفحة */
+    padding: 2rem 0;
+    background-color: #2a9d8f;
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    margin: 0 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #f4a261;
+}
+
+/* الأقسام العامة */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    color: #264653;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #e9c46a;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+}
+
+/* تصميم الجدول */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    background-color: white;
+}
+
+thead th {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+tbody td {
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f7f9fc;
+}
+
+/* تنسيق الصور داخل الجدول */
+tbody td img {
+    max-width: 80px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* تنسيق النصوص داخل الجدول */
+tbody td[data-label] {
+    font-size: 1rem;
+    color: #264653;
+}
+
+/* الأزرار داخل الجدول */
+button {
+    background-color: #2a9d8f;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #21867a;
+}
+
+/* النموذج */
+form {
+    margin-top: 1rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* التذييل */
+footer {
+    background-color: #2a9d8f;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}

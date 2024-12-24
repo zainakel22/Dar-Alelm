@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الكتب - مكتبتنا</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="myFunctions.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>مرحباً بكم في مكتبة دار العلم</h1>
+        <nav>
+            <a href="index.html">الرئيسية</a> |
+            <a href="aboutus.html">من نحن</a> |
+            <a href="books.html">الكتب</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="books">
+            <h2>قائمة الكتب</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>الصورة</th>
+                        <th>رمز الكتاب</th>
+                        <th>ISBN</th>
+                        <th>العنوان</th>
+                        <th>السعر</th>
+                        <th>اختيار الكتاب</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="الصورة">
+                            <img src="img/300897.jpg" alt="مصر خبيئة حارسة المعبد" style="width: 100px; height: auto;">
+                        </td>
+                        <td data-label="رمز الكتاب">1</td>
+                        <td data-label="ISBN">978-300897</td>
+                        <td data-label="العنوان">مصر خبيئة حارسة المعبد</td>
+                        <td data-label="السعر">30000 ل.س</td>
+                        <td data-label="اختيار الكتاب">
+                            <button class="select-btn" data-title="مصر خبيئة حارسة المعبد"
+                                data-price="30000 ل.س">اختيار</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="الصورة">
+                            <img src="img/300900.jpg" alt="ليس له من أثر" style="width: 100px; height: auto;">
+                        </td>
+                        <td data-label="رمز الكتاب">2</td>
+                        <td data-label="ISBN">978-300900</td>
+                        <td data-label="العنوان">ليس له من أثر</td>
+                        <td data-label="السعر">25000 ل.س</td>
+                        <td data-label="اختيار الكتاب">
+                            <button class="select-btn" data-title="ليس له من أثر" data-price="25000 ل.س">اختيار</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="الصورة">
+                            <img src="img/411780.jpg" alt="النشيد الأولمبي" style="width: 100px; height: auto;">
+                        </td>
+                        <td data-label="رمز الكتاب">3</td>
+                        <td data-label="ISBN">978-411780</td>
+                        <td data-label="العنوان">النشيد الأولمبي</td>
+                        <td data-label="السعر">10000 ل.س</td>
+                        <td data-label="اختيار الكتاب">
+                            <button class="select-btn" data-title="النشيد الأولمبي"
+                                data-price="10000 ل.س">اختيار</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- نموذج الطلب -->
+            <section id="form" style="display: none;">
+                <h2>طلب كتاب</h2>
+                <form id="order-form">
+                    <p><strong>الكتاب المختار:</strong> <span id="selected-book"></span></p>
+                    <label for="full-name">الاسم الكامل:</label>
+                    <input type="text" id="full-name" pattern="[\u0621-\u064A ]+"
+                        placeholder="الاسم يقبل باللغة العربية فقط">
+
+                    <label for="national-id">الرقم الوطني: </label>
+                    <input type="text" id="national-id" required pattern="\d{11}"
+                        placeholder="الرقم الوطني يتألف من 11 خانة">
+
+                    <label for="birth-date">تاريخ الميلاد:</label>
+                    <input type="date" id="birth-date">
+
+                    <label for="phone">رقم الموبايل:</label>
+                    <input type="tel" id="phone" pattern="(09|08)[0-9]{8}" placeholder="المسموح فقط ادخال ارقام سورية">
+
+                    <label for="email">البريد الإلكتروني:</label>
+                    <input type="email" id="email">
+
+                    <button type="submit">إرسال</button>
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 مكتبة دار العلم.</p>
+    </footer>
+</body>
+
+</html>
